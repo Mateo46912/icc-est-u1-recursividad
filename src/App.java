@@ -18,10 +18,14 @@ public class App {
     //     return resultadoParcial;
         
 
-        EjerciciosRecursivos ejercicios = new EjerciciosRecursivos();
-        int resultado = ejercicios.fibonacci(5);
-        System.out.println("El Fibonacci de 5 es: " + resultado);
-
+   
+    
+            EjerciciosRecursivos ejercicios = new EjerciciosRecursivos();
+            int resultadoFibonacci = ejercicios.fibonacci(5); 
+            System.out.println("Fibonacci(6) = " + resultadoFibonacci);
+            
+            int resultadoSuma = ejercicios.sumaConsecutivos(5); 
+            System.out.println("Suma consecutivos(5) = " + resultadoSuma);
         
 
 
