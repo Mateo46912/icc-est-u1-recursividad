@@ -35,7 +35,7 @@ public class EjerciciosRecursivos {
         }else  {
             int num = n % 10; 
             int num2 = n / 10;
-            
+
             return getSumaDigitos(num2) + num;
 
         }
@@ -43,8 +43,36 @@ public class EjerciciosRecursivos {
 
     }
 
+    public int numerosDescendente (int n ){
+        if (n==0){
+            return 1;
+    }else{
 
+         System.out.print(n+" ");
+        int resultadoDescendente =  numerosDescendente(n-1);
+        return resultadoDescendente;
+    }
 
     }
+
+
+    public int reverso(int n, int invertido){
+         if (n == 0 ){
+            return invertido;
+
+            
+         }else {
+            int numer = n % 10; 
+            int  numero = n / 10;
+            int numer3 = invertido * 10 ;
+            return reverso(numero ,numer + numer3 );
+         }
+         
+        
+    }
+        
+
+}
+    
 
     
